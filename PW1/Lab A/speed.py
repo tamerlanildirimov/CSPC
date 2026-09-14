@@ -5,13 +5,13 @@ N0 = 1000000
 p = 0.01
 steps = 200
 
-# Измерение времени для медленного варианта (через цикл)
+# Measuring time for slow case (loop)
 t0 = time.perf_counter()
 simulate_loop(N0, p, steps)
 t1 = time.perf_counter()
 time_loop = t1 - t0
 
-# Измерение времени для быстрого варианта (NumPy)
+# Measuring time for fast case (NumPy)
 t0 = time.perf_counter()
 simulate(N0, p, steps)
 t1 = time.perf_counter()
