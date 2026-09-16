@@ -1,0 +1,55 @@
+Assuming unrestricted shared filesystem usage.
+
+SNAKEMAKE
+=========
+  Date: 2026-09-16 15:31:44
+  Workflow ID: 8f02f6ff-9e48-4bcb-9eef-4f105332adde
+  Platform: Linux-7.0.0-31-generic-x86_64-with-glibc2.39
+  Host: tamerlan-HP-ProBook-4-G1i-16-inch-Notebook-AI-PC
+  User: tamerlan
+  Snakemake version: 9.27.0
+  Python version: 3.11.16 (main, Sep  2 2026, 23:39:52) [GCC 15.3.0]
+  Command: /home/tamerlan/miniconda3/envs/cspc/bin/snakemake --forceall -c1
+  Snakefile: /home/tamerlan/CSPC/PW1/Lab B/Snakefile
+  Base directory: /home/tamerlan/CSPC/PW1/Lab B
+  Run directory: /home/tamerlan/CSPC/PW1/Lab B
+  Working directory: /home/tamerlan/CSPC/PW1/Lab B
+  Config file(s): []
+  Config MD5: 99914b932bd37a50b983c5e7c90ae93b
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job          count
+---------  -------
+make_plot        1
+all              1
+total            2
+
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep 16 15:31:44 2026]
+localrule make_plot:
+    input: decay_observed.csv, plot.py
+    output: figure.png
+    jobid: 1
+    reason: Forced execution
+    resources: tmpdir=/tmp
+[Wed Sep 16 15:31:45 2026]
+Finished jobid: 1 (Rule: make_plot)
+1 of 2 steps (50%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Sep 16 15:31:45 2026]
+localrule all:
+    input: figure.png
+    jobid: 0
+    reason: Forced execution
+    resources: tmpdir=/tmp
+[Wed Sep 16 15:31:45 2026]
+Finished jobid: 0 (Rule: all)
+2 of 2 steps (100%) done
+Complete log(s): /home/tamerlan/CSPC/PW1/Lab B/.snakemake/log/2026-09-16T153144.177481.snakemake.log
+Elapsed time: 0:00:01.469051
