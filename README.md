@@ -15,4 +15,4 @@ Lab A complete. All tests passing (3/3), speedup verified, and environment confi
 
 ## PW1 - Lab B: Data Processing & Snakemake Pipeline
 
-Lab B complete. CSV data processed, decay plotted (figure.png), and automated via Snakemake workflow.
+The observed decay data closely matches the exponential analytical decay law. The Snakemake pipeline automates the data reading and plot generation process, rebuilding output files only when dependencies change.
