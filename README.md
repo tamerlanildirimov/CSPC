@@ -12,3 +12,7 @@ conda activate cspc
 ## PW1 - Lab A: Reproducible Foundations
 
 Lab A complete. All tests passing (3/3), speedup verified, and environment configured.
+
+## PW1 - Lab B: Data Processing & Snakemake Pipeline
+
+Lab B complete. CSV data processed, decay plotted (figure.png), and automated via Snakemake workflow.
